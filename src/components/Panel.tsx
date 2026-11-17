@@ -1,0 +1,1 @@
+export default function Panel({title,children}:{title:string;children:React.ReactNode}){return <section className="panel"><div className="panel-title">{title}</div>{children}</section>}

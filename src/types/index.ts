@@ -1,0 +1,1 @@
+export type Event<T=unknown>={type:string;payload?:T;line?:number;label?:string}; export type Frame<S>={state:S;event:Event;index:number}; export type PlaybackStatus='idle'|'playing'|'paused';

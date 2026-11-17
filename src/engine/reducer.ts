@@ -1,0 +1,1 @@
+import type {Event} from '../types'; export function applyPatch<S extends Record<string,any>>(state:S,event:Event):S { if(event.type==='PATCH'&&event.payload) return {...state,...event.payload as object}; return state; }
